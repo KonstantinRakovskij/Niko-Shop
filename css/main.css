@@ -567,7 +567,7 @@ textarea.input+.focus-input::after {
 
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
-@media (max-width: 767px) {
+@media only screen and (min-width: 320px)  and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
     /*Vidno na vseh telefonah do plansetok*/
    
 
@@ -585,8 +585,11 @@ textarea.input+.focus-input::after {
 
 /*Contact form padding setings */
 .wrap-contact {
-        padding: 72px 15px 90px 15px;
+        padding: 10px 10px 7px 10px;
     }
+
+    /* .wrap-contact {
+        padding: 72px 15px 90px 15px */
 
 /* ------------------------------ Welcome section START----------------------------- */
 .banner {
@@ -606,6 +609,9 @@ textarea.input+.focus-input::after {
     }
     .welcome-text {
         font-size: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
     }
 /* ------------------------------ Welcome section END------------------------------- */
 
@@ -640,6 +646,12 @@ textarea.input+.focus-input::after {
     }
 /* ------------------------------ About Us section END----------------------------- */
 
+/* ------------------------------ Naujienos section START----------------------------- */
+
+.meskiuko-photo>img {
+    margin-top: 1rem;
+}
+/* ------------------------------ Naujienos section END----------------------------- */
 
     .bot-line {
         flex-wrap: wrap;
@@ -849,7 +861,7 @@ textarea.input+.focus-input::after {
 
 /*Media -------------------------Queries ----------------------------------- Tablets */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px){
     /*vidno ot plansetak*/
     /*Hide mobile*/
     .navigation-mobile {
@@ -884,5 +896,13 @@ textarea.input+.focus-input::after {
     .contact-form-title {
         line-height: 2.2;
         padding-bottom: 30px;
+    }
+}
+@media screen 
+  and (min-width: 1200px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .navigation-mobile {
+        display: none !important;
     }
 }
