@@ -559,11 +559,48 @@ textarea.input+.focus-input::after {
     opacity: 1;
 }
 
-/*Media -------------------------Queries ----------------------------------- Tablets */
+/*Media -------------------------Queries ----------------------------------- do plansetki */
 
 @media only screen and (max-width: 767px) {
     /*Vidno na vseh telefonah do plansetok*/
+    .wrap-contact {
+        padding: 72px 15px 90px 15px;
+    }
+    .produkto-blokas {
+        display: block; 
+    }
+    .divider-left, .divider-right {
+        width: 5rem;
+    }
+    .welcome-heading {
+        font-size: 1.5rem;
+    }
+    .banner {
+        min-height: 25vh;
+    }
+    .content, .heading {
+        margin-top: 1rem;
+    }
+    .produkto-photo {
+        max-width: 20rem;
+        margin-left: 1.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;  
+    }
+    .produkto-info>h3 {
+        margin-right: 0;
+        margin-left: 2rem;    
+    }
+    .bot-line {
+        
+        flex-wrap: wrap;
+        
+    }
+    
+
     /*Hide desktop*/
+
     .navigation-desktop {
         display: none !important;
     }
@@ -759,12 +796,11 @@ textarea.input+.focus-input::after {
         }
     }
     /*Contact form padding setings */
-    .wrap-contact {
-        padding: 72px 15px 90px 15px;
-    }
+   
 }
 
 /*Tablets*/
+
 
 @media (min-width: 768px) {
     /*vidno ot plansetak*/
@@ -787,16 +823,6 @@ textarea.input+.focus-input::after {
         margin-left: 3rem;
         margin-right: 3rem;
         margin-top: 3rem;
-    }
-    h3 {
-        line-height: 2rem;
-        text-align: justify;
-    }
-    .welcome-heading {
-        font-size: 2.5rem;
-    }
-    .divider-left, .divider-right {
-        width: 10rem;
     }
     .imglist {
         flex-wrap: wrap;
@@ -825,4 +851,5 @@ textarea.input+.focus-input::after {
         line-height: 2.2;
         padding-bottom: 30px;
     }
+
 }
