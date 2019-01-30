@@ -576,7 +576,7 @@ textarea.input+.focus-input::after {
         font-size: 1.5rem;
     }
     .banner {
-        min-height: 25vh;
+        min-height: 40vh;
     }
     .content, .heading {
         margin-top: 1rem;
