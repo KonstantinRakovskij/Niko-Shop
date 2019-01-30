@@ -553,16 +553,24 @@ textarea.input+.focus-input::after {
     transform: translateY(-50%);
     right: 8px;
 }
+.alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+}
 
 .alert-validate:hover:before {
     visibility: visible;
     opacity: 1;
 }
 
-/*Media -------------------------Queries ----------------------------------- do plansetki */
+
+
+
+/*Media -------------------------Queries ----------------------------------- Mobile */
 
 @media only screen and (max-width: 767px) {
     /*Vidno na vseh telefonah do plansetok*/
+    /*Contact form padding setings */
     .wrap-contact {
         padding: 72px 15px 90px 15px;
     }
@@ -594,8 +602,7 @@ textarea.input+.focus-input::after {
     }
     .bot-line {
         
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
     
 
@@ -795,11 +802,11 @@ textarea.input+.focus-input::after {
             left: 0;
         }
     }
-    /*Contact form padding setings */
    
 }
 
-/*Tablets*/
+
+/*Media -------------------------Queries ----------------------------------- Tablets */
 
 
 @media (min-width: 768px) {
@@ -808,16 +815,6 @@ textarea.input+.focus-input::after {
     .navigation-mobile {
         display: none !important;
     }
-}
-
-@media (max-width: 992px) {
-    .alert-validate::before {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@media ( max-width: 1024px) {
     .welcome-text {
         font-size: 1.4rem;
         margin-left: 3rem;
