@@ -138,6 +138,7 @@ h2 {
     font-family: 'Awesome Season Personal Use';
     font-size: 3rem;
     font-weight: normal;
+    text-align: center;
 }
 
 h3 {
@@ -161,7 +162,7 @@ h3 {
 
 /* Product info section END */
 
-/* apie mus sekcija */
+/* ------------------------------ About Us section START----------------------------- */
 
 .about-us {
     display: flex;
@@ -183,12 +184,9 @@ h3 {
 .about-us-info>h2 {
     text-align: center;
 }
+/* ------------------------------ About Us section END----------------------------- */
 
-.about-us-info>h3 {
-    text-align: justify;
-}
-
-/* Naujienos sekcija */
+/* ------------------------------ Naujienos section START----------------------------- */
 
 .top-line {
     display: flex;
@@ -213,6 +211,7 @@ h3 {
 .meskiuko-info {
     width: 22rem;
 }
+/* ------------------------------ Naujienos section END----------------------------- */
 
 .knowmore-button {
     background-color: #000000;
@@ -236,7 +235,7 @@ h3 {
     top: 1px;
 }
 
-/* Daugiau naujienu sekcija */
+/* ------------------------------ More news section START----------------------------- */
 
 .daugiau-naujienu {
     width: 100%;
@@ -247,8 +246,9 @@ h3 {
     min-height: 60vh;
     position: relative;
 }
+/* ------------------------------ More news section END----------------------------- */
 
-/* Migtuko stilistika SART */
+/* ------------------------------ Migtuko stilistika START----------------------------- */
 
 .morenews-button {
     background: black;
@@ -275,9 +275,10 @@ h3 {
     top: 1px;
 }
 
-/* Mygtuko stilistika END */
+/* ------------------------------ Migtuko stilistika END----------------------------- */
 
-/* Niko-image Galery START */
+/* ------------------------------ Niko Image Gallery  section START----------------------------- */
+
 
 .imglist {
     display: flex;
@@ -291,8 +292,8 @@ h3 {
 .imglist a img {
     height: 290px;
 }
+/* ------------------------------ Niko image galery section END----------------------------- */
 
-/* Niko image galery END */
 
 /*Niko contact forma START*/
 
@@ -553,6 +554,7 @@ textarea.input+.focus-input::after {
     transform: translateY(-50%);
     right: 8px;
 }
+
 .alert-validate::before {
     visibility: visible;
     opacity: 1;
@@ -563,51 +565,92 @@ textarea.input+.focus-input::after {
     opacity: 1;
 }
 
-
-
-
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     /*Vidno na vseh telefonah do plansetok*/
-    /*Contact form padding setings */
-    .wrap-contact {
+   
+
+/* ------------------------------ General setings START----------------------------- */
+
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
+/* ------------------------------ General  setings END----------------------------- */ 
+
+
+/*Contact form padding setings */
+.wrap-contact {
         padding: 72px 15px 90px 15px;
     }
-    .produkto-blokas {
-        display: block; 
-    }
-    .divider-left, .divider-right {
-        width: 5rem;
+
+/* ------------------------------ Welcome section START----------------------------- */
+.banner {
+        min-height: 40vh;
     }
     .welcome-heading {
-        font-size: 1.5rem;
-    }
-    .banner {
-        min-height: 40vh;
+        font-size: 1rem;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .content, .heading {
         margin-top: 1rem;
     }
-    .produkto-photo {
+    .divider-left, .divider-right {
+        width: 5rem;
+        object-fit: contain;
+    }
+    .welcome-text {
+        font-size: 1rem;
+    }
+/* ------------------------------ Welcome section END------------------------------- */
+
+/* ------------------------------ Product section START----------------------------- */
+.produkto-photo {
         max-width: 20rem;
         margin-left: 1.5rem;
     }
-    h2 {
-        font-size: 2.5rem;  
-    }
     .produkto-info>h3 {
-        margin-right: 0;
-        margin-left: 2rem;    
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        font-size: 1rem;
     }
+    .produkto-blokas {
+        display: block;
+    }
+/* ------------------------------ Product section END-------------------------------- */
+
+/* ------------------------------ About Us section START----------------------------- */
+
+    .about-us-info>h3 {
+        padding-left: 19%;
+        padding-right: 6%;
+        letter-spacing: 0.001em;
+        line-height: 32px;
+    }
+    .about-us-info {
+        margin-right: 0.5rem;
+        margin-top: 0;
+        width: 341px;
+    }
+/* ------------------------------ About Us section END----------------------------- */
+
+
     .bot-line {
-        
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
     }
-    
-
+    .imglist {
+        flex-wrap: wrap;
+    }
+    .imglist a img {
+        height: 160px;
+    }
     /*Hide desktop*/
-
     .navigation-desktop {
         display: none !important;
     }
@@ -802,12 +845,9 @@ textarea.input+.focus-input::after {
             left: 0;
         }
     }
-   
 }
 
-
 /*Media -------------------------Queries ----------------------------------- Tablets */
-
 
 @media (min-width: 768px) {
     /*vidno ot plansetak*/
@@ -820,9 +860,6 @@ textarea.input+.focus-input::after {
         margin-left: 3rem;
         margin-right: 3rem;
         margin-top: 3rem;
-    }
-    .imglist {
-        flex-wrap: wrap;
     }
     .imglist a img {
         height: 165px;
@@ -848,5 +885,4 @@ textarea.input+.focus-input::after {
         line-height: 2.2;
         padding-bottom: 30px;
     }
-
 }
