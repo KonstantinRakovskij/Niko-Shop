@@ -597,20 +597,22 @@ textarea.input+.focus-input::after {
     display: flex;
     justify-content: space-evenly;
 }
-.socialmedia-block{
+
+.socialmedia-block {
     width: 100%;
 }
-.socialmedia-photo{
+
+.socialmedia-photo {
     display: flex;
     justify-content: space-around;
 }
+
 .socialmedia-photo>a>img {
     width: 95px;
     max-height: 75px;
     object-fit: contain;
-    
+    text-decoration: none;
 }
-
 
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
