@@ -30,19 +30,20 @@ section {
 /* Banner section start */
 
 .banner {
-   display: flex;
+    display: flex;
     width: 100%;
     background-image: url(../assets/images/original/top-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 60vh;
-    
 }
-.banner-text{
+
+.banner-text {
     position: relative;
 }
-.banner-text>h4:nth-child(odd){
+
+.banner-text>h4:nth-child(odd) {
     position: absolute;
     left: 50px;
     font-size: 2rem;
@@ -53,13 +54,15 @@ section {
     padding-top: 10px;
     padding-left: 18px;
 }
-.banner-text>h4:nth-child(even){
+
+.banner-text>h4:nth-child(even) {
     position: absolute;
     left: 130px;
     top: 60px;
     font-size: 1.5rem;
     padding-top: 3px;
 }
+
 /* Banner section END */
 
 /* Navigation meniu section START */
@@ -206,6 +209,7 @@ h3 {
 .about-us-info>h2 {
     text-align: center;
 }
+
 /* ------------------------------ About Us section END----------------------------- */
 
 /* ------------------------------ Naujienos section START----------------------------- */
@@ -233,6 +237,7 @@ h3 {
 .meskiuko-info {
     width: 22rem;
 }
+
 /* ------------------------------ Naujienos section END----------------------------- */
 
 .knowmore-button {
@@ -268,6 +273,7 @@ h3 {
     min-height: 60vh;
     position: relative;
 }
+
 /* ------------------------------ More news section END----------------------------- */
 
 /* ------------------------------ Migtuko stilistika START----------------------------- */
@@ -301,7 +307,6 @@ h3 {
 
 /* ------------------------------ Niko Image Gallery  section START----------------------------- */
 
-
 .imglist {
     display: flex;
     justify-content: space-evenly;
@@ -314,8 +319,8 @@ h3 {
 .imglist a img {
     height: 290px;
 }
-/* ------------------------------ Niko image galery section END----------------------------- */
 
+/* ------------------------------ Niko image galery section END----------------------------- */
 
 /*Niko contact forma START*/
 
@@ -587,34 +592,46 @@ textarea.input+.focus-input::after {
     opacity: 1;
 }
 
+.footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialmedia-block{
+    width: 100%;
+}
+.socialmedia-photo{
+    display: flex;
+    justify-content: space-around;
+}
+.socialmedia-photo>a>img {
+    width: 95px;
+    max-height: 75px;
+    object-fit: contain;
+    
+}
+
+
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
-@media only screen and (min-width: 320px)  and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     /*Vidno na vseh telefonah do plansetok*/
-   
-
-/* ------------------------------ General setings START----------------------------- */
-
+    /* ------------------------------ General setings START----------------------------- */
     h2 {
         font-size: 2rem;
     }
     h3 {
         font-size: 1rem;
     }
-
-/* ------------------------------ General  setings END----------------------------- */ 
-
-
-/*Contact form padding setings */
-.wrap-contact {
+    /* ------------------------------ General  setings END----------------------------- */
+    /*Contact form padding setings */
+    .wrap-contact {
         padding: 10px 10px 7px 10px;
     }
-
     /* .wrap-contact {
         padding: 72px 15px 90px 15px */
-
-/* ------------------------------ Welcome section START----------------------------- */
-.banner {
+    /* ------------------------------ Welcome section START----------------------------- */
+    .banner {
         min-height: 40vh;
     }
     .welcome-heading {
@@ -636,7 +653,6 @@ textarea.input+.focus-input::after {
         width: 18.75rem;
     }
     .banner-text>h4:nth-child(odd) {
-        
         left: 0.6875rem;
         top: -0.5625rem;
         font-size: 1.2rem;
@@ -651,10 +667,9 @@ textarea.input+.focus-input::after {
         font-size: 1rem;
         padding-top: 0.1875rem;
     }
-/* ------------------------------ Welcome section END------------------------------- */
-
-/* ------------------------------ Product section START----------------------------- */
-.produkto-photo {
+    /* ------------------------------ Welcome section END------------------------------- */
+    /* ------------------------------ Product section START----------------------------- */
+    .produkto-photo {
         max-width: 20rem;
         margin-left: 1.5rem;
     }
@@ -667,10 +682,8 @@ textarea.input+.focus-input::after {
     .produkto-blokas {
         display: block;
     }
-/* ------------------------------ Product section END-------------------------------- */
-
-/* ------------------------------ About Us section START----------------------------- */
-
+    /* ------------------------------ Product section END-------------------------------- */
+    /* ------------------------------ About Us section START----------------------------- */
     .about-us-info>h3 {
         padding-left: 19%;
         padding-right: 6%;
@@ -682,15 +695,12 @@ textarea.input+.focus-input::after {
         margin-top: 0;
         width: 341px;
     }
-/* ------------------------------ About Us section END----------------------------- */
-
-/* ------------------------------ Naujienos section START----------------------------- */
-
-.meskiuko-photo>img {
-    margin-top: 1rem;
-}
-/* ------------------------------ Naujienos section END----------------------------- */
-
+    /* ------------------------------ About Us section END----------------------------- */
+    /* ------------------------------ Naujienos section START----------------------------- */
+    .meskiuko-photo>img {
+        margin-top: 1rem;
+    }
+    /* ------------------------------ Naujienos section END----------------------------- */
     .bot-line {
         flex-wrap: wrap;
     }
@@ -899,7 +909,7 @@ textarea.input+.focus-input::after {
 
 /*Media -------------------------Queries ----------------------------------- Tablets */
 
-@media only screen and (min-width: 768px) and (max-width: 1280px){
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
     /*vidno ot plansetak*/
     /*Hide mobile*/
     .navigation-mobile {
@@ -936,10 +946,8 @@ textarea.input+.focus-input::after {
         padding-bottom: 30px;
     }
 }
-@media screen 
-  and (min-width: 1200px) 
-  and (max-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .navigation-mobile {
         display: none !important;
     }
