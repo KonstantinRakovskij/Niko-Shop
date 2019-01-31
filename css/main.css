@@ -36,7 +36,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 50vh;
+    min-height: 60vh;
     
 }
 .banner-text{
@@ -44,20 +44,21 @@ section {
 }
 .banner-text>h4:nth-child(odd){
     position: absolute;
-    left: 70px;
+    left: 50px;
     font-size: 2rem;
-    background-color: #8181811e;
+    background-color: #8181813a;
     width: 230px;
     height: 85px;
     text-align: left;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 18px;
 }
 .banner-text>h4:nth-child(even){
     position: absolute;
-    left: 140px;
+    left: 130px;
     top: 60px;
     font-size: 1.5rem;
+    padding-top: 3px;
 }
 /* Banner section END */
 
@@ -632,7 +633,23 @@ textarea.input+.focus-input::after {
         font-size: 1rem;
         margin-right: auto;
         margin-left: auto;
-        width: 300px;
+        width: 18.75rem;
+    }
+    .banner-text>h4:nth-child(odd) {
+        
+        left: 0.6875rem;
+        top: -0.5625rem;
+        font-size: 1.2rem;
+        width: 7.5rem;
+        height: 2.9375rem;
+        padding-top: 0.4375rem;
+        padding-left: 0.9375rem;
+    }
+    .banner-text>h4:nth-child(even) {
+        left: 3rem;
+        top: 1.125rem;
+        font-size: 1rem;
+        padding-top: 0.1875rem;
     }
 /* ------------------------------ Welcome section END------------------------------- */
 
