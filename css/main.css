@@ -591,29 +591,43 @@ textarea.input+.focus-input::after {
     visibility: visible;
     opacity: 1;
 }
-
+/* Footer START */
 .footer {
     margin-top: 5rem;
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 .socialmedia-block {
     width: 100%;
 }
 
-.socialmedia-photo {
+.socialmedia-info {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
-.socialmedia-photo>a>img {
+div>a>img:only-of-type {
     width: 95px;
     max-height: 75px;
     object-fit: contain;
-    text-decoration: none;
 }
+#google-maps-img:hover{
+        content: url('../assets/images/original/Icons/placeholder\ -\ hover.png');
+    }
+#instagram-img:hover{
+    content: url('../assets/images/original/Icons/instagram_hover.png');
+}
+#facebook-img:hover{
+    content: url('../assets/images/original/Icons/facebook_hover.png');
+}
+#gmail-img:hover{
+    content: url('../assets/images/original/Icons/gmail_hover.png');
 
+
+    /* Footer END */
+}
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
