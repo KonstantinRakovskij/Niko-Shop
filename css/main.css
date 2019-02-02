@@ -930,6 +930,20 @@ div>a>img:only-of-type {
             left: 0;
         }
     }
+       /* Footer START */
+       .footer {
+        margin-top: 5rem;
+        display: flex;
+    }
+    .socialmedia-info {
+        flex-wrap: wrap;
+    }
+    div>a>img:only-of-type {
+        width: 170px;
+        max-height: 75px;
+        object-fit: contain;
+    }
+
 }
 
 /*Media -------------------------Queries ----------------------------------- Tablets */
@@ -970,6 +984,7 @@ div>a>img:only-of-type {
         line-height: 2.2;
         padding-bottom: 30px;
     }
+    
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
