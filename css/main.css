@@ -329,9 +329,6 @@ h4 {
 
 /*Niko contact forma START*/
 
-.contact-forma {
-    margin-top: 0;
-}
 
 element.style {
     background-image: url(../assets/images/original/Untitled.jpg);
@@ -636,6 +633,20 @@ div>a>img:only-of-type {
     content: url('../assets/images/original/Icons/gmail_hover.png');
     /* Footer END */
 }
+/* Line in the bottom of the footer */
+hr {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3px solid #000a0f;
+    
+    }
+.copyrights{
+    display: flex;
+    justify-content: center;
+    
+}
+
 
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
