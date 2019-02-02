@@ -1,4 +1,6 @@
 
+//Contact form vlidate
+
 (function ($) {
     "use strict";
 
@@ -65,13 +67,16 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
 
 })(jQuery);
 
+   //Java script
+//Burger menu overlay
+   function closeMenu(){
+       document.getElementById("navbar").style.height="0%";
+   }
+   function openMenu(){
+    document.getElementById("navbar").style.height="100%";
+}
 
-$('#toggle').click(function() {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-   });
+ 
