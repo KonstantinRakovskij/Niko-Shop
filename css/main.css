@@ -671,6 +671,7 @@ hr.style1{
     flex-flow: wrap;
     justify-content: center;
     align-items: flex-start;
+    text-align:justify; 
 }
 
 .apyrankiu-blokas {
