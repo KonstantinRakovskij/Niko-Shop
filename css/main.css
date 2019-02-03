@@ -648,30 +648,28 @@ hr {
     justify-content: center;
 }
 
-
 /* Apyrankes.index*/
 .visos-apyrankes{
     display: flex;
-    flex-direction: column;
-}
-.apyrankiu-blokas{
-    display: flex;
-    justify-content: space-around;
-   
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-start;
     
 }
-.apyrankes-photo {
-    width: 18rem;
+.apyrankiu-blokas{
+    width: 320px;
+    margin: 40px;
 }
 
 .apyrankes-photo>img {
     width: 100%;
+    border-radius: 5px;
 }
-.apyrankes-info>h3{
-font-size: 12px;
-}
-.apyrankes-info>h2{
-  
+
+.apyrankes-info{
+   width: 250px; 
+   margin-right: auto;
+   margin-left: auto;
 }
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
@@ -975,6 +973,12 @@ font-size: 12px;
         line-height: 2.2;
         padding-bottom: 1.875rem;
     }
+
+    /* Apyrankes.index part */
+    .apyrankiu-blokas {
+        width: 300px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {

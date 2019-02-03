@@ -9,7 +9,7 @@ body {
 .flex-container {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    
 }
 
 .flex-container>div {
@@ -52,4 +52,8 @@ a:hover {
     img{
         width: 300px;
     }
+.flex-container{
+    margin-top: 20%;
+}
+    
     }
