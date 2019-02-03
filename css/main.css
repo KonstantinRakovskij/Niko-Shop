@@ -32,7 +32,7 @@ section {
 .banner {
     display: flex;
     width: 100%;
-    background-image: url(../assets/images/original/top-banner.jpg);
+    background-image: url(../assets/images/original/Banners/top-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,7 +115,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
-    
 }
 
 .divider-left, .divider-right {
@@ -131,10 +130,11 @@ a:hover {
     font-size: 1.2rem;
     margin-top: 3rem;
 }
-.welcome-heading{
+
+.welcome-heading {
     margin-left: 10px;
     margin-right: 10px;
-    font-family:  Times, serif;
+    font-family: Times, serif;
     font-size: 1.7rem;
 }
 
@@ -205,7 +205,7 @@ h4 {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-image: url(../assets/images/original/about-us-banner.jpg);
+    background-image: url(../assets/images/original/Banners/about-us-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -231,13 +231,15 @@ h4 {
     align-items: center;
     justify-content: center;
 }
-.naujienos-heading{
-    font-family:  Times, serif;
+
+.naujienos-heading {
+    font-family: Times, serif;
     font-size: 1.7rem;
     margin-right: 10px;
     margin-left: 10px;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 .bot-line {
     display: flex;
     justify-content: space-around;
@@ -284,7 +286,7 @@ h4 {
 
 .daugiau-naujienu {
     width: 100%;
-    background-image: url(../assets/images/compressed/daugiaunaujienu.jpg);
+    background-image: url(../assets/images/original/Banners/daugiaunaujienu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -648,16 +650,13 @@ div>a>img:only-of-type {
 
 /* Line in the bottom of the footer */
 
-
-hr.style1{
+hr.style1 {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     border: 0.01875rem solid #000a0f;
     margin-top: 3rem;
 }
-
-
 
 .copyrights {
     display: flex;
@@ -671,7 +670,7 @@ hr.style1{
     flex-flow: wrap;
     justify-content: center;
     align-items: flex-start;
-    text-align:justify; 
+    text-align: justify;
 }
 
 .apyrankiu-blokas {
@@ -690,7 +689,7 @@ hr.style1{
     margin-left: auto;
 }
 
-hr.style2{
+hr.style2 {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -698,14 +697,74 @@ hr.style2{
     margin-top: 3rem;
 }
 
+/* Meskiukai.index */
 
+.meskiukai {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-wrap: wrap;
+}
 
+.meskiuku-photo {
+    width: 500px;
+}
+
+.meskiuku-photo>img {
+    width: 290px;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    box-shadow: 2px 0px 180px -25px rgba(0, 0, 0, 0.23);
+}
+
+.meskiuku-info {
+    width: 25.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.meskiuku-info>h4 {
+    
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.pristatymai{
+  display: flex;
+  margin-top: 4rem; 
+  
+}
+.pristatymo-budai{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-evenly;
+    width: 78%;
+}
+.pristatymo-info{
+    width: 390px;
+}
+.pristatymo-logo{
+    max-width: 100%;
+}
+.pristatymo-logo>img{
+    width: 188px;
+}
+.pristatymo-info>h3{
+    font-weight: 900;
+}
+.pristatymai>div{
+    margin: 0 auto;
+}
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-    /*Vidno na vseh telefonah do plansetok*/
     /* ------------------------------ General setings START----------------------------- */
-    
+    a:hover {
+        color: transparent;
+    }
     h2 {
         font-size: 2rem;
     }
@@ -717,8 +776,6 @@ hr.style2{
     .wrap-contact {
         padding: 0.625rem 0.625rem 0.4375rem 0.625rem;
     }
-    /* .wrap-contact {
-        padding: 72px 15px 90px 15px */
     /* ------------------------------ Welcome section START----------------------------- */
     .banner {
         min-height: 40vh;
@@ -802,7 +859,7 @@ hr.style2{
         height: 10rem;
     }
     /*Burger Menu seting START*/
-    /* button section start */
+    /* Button section start */
     .button_container {
         position: fixed;
         top: 5%;
@@ -815,15 +872,12 @@ hr.style2{
     }
     .button_container.active .top {
         transform: translateY(11px) translateX(0) rotate(45deg);
-        background: #FFF;
     }
     .button_container.active .middle {
         opacity: 0;
-        background: #FFF;
     }
     .button_container.active .bottom {
         transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: #FFF;
     }
     .button_container span {
         background: #FF5252;
@@ -842,8 +896,8 @@ hr.style2{
     .button_container span:nth-of-type(3) {
         top: 22px;
     }
-    /* button sectiob end */
-    /* overlay section start */
+    /* Button sectiob end */
+    /* Overlay section start */
     .overlay {
         position: fixed;
         background: #FF5252;
@@ -898,7 +952,7 @@ hr.style2{
     .overlay ul li a {
         display: block;
         position: relative;
-        color: #FFF;
+        ;
         text-decoration: none;
         overflow: hidden;
     }
@@ -916,7 +970,6 @@ hr.style2{
         width: 0%;
         transform: translateX(-50%);
         height: 3px;
-        background: #FFF;
         transition: .35s;
     }
     @-webkit-keyframes fadeInRight {
@@ -939,7 +992,7 @@ hr.style2{
             left: 0;
         }
     }
-    /* overlay section end */
+    /* Overlay section end */
     /* Burger menu END */
     /* Footer START */
     .footer {
@@ -954,14 +1007,33 @@ hr.style2{
         max-height: 4.6875rem;
         object-fit: contain;
     }
+    /* Meskiukai.html */
+    .meskiukai {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .meskiuku-photo {
+        max-width: 300px;
+    }
+    .meskiuku-info {
+        width: 276px;
+    }
+    .meskiuku-photo>img {}
+    .meskiuku-info>h2 {
+        width: 276px;
+    }
+    .meskiuku-info>h4 {
+        width: 20rem;
+        text-align: justify;
+    }
+    /* Footer END */
 }
 
 /*Media -------------------------Queries ----------------------------------- Tablets */
 
 @media only screen and (min-width: 500px) and (max-width: 1280px) {
-    /*vidno ot plansetak*/
-    /*Hide mobile*/
-   
+/* Generic setings */
+    
     .welcome-text {
         font-size: 1.4rem;
         margin-left: 3rem;
@@ -996,16 +1068,21 @@ hr.style2{
     .apyrankiu-blokas {
         width: 300px;
     }
-    hr.style2{
-        display: none;
-    }
     
-
-  
+    /* Meskiukai.html */
+    .meskiukai {
+        display: flex;
+       
+        justify-content: center;
+        margin-top: 7rem;
+    }
+    .meskiuku-photo{
+        width: 320px;
+    }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    hr.style2{
+@media screen and (min-width: 1200px) and (max-width: 1900px) and (-webkit-min-device-pixel-ratio: 1) {
+    hr.style2 {
         display: none;
     }
-}                
+}
