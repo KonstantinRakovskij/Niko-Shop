@@ -2,8 +2,8 @@
     font-family: "Amble Lt";
     src: url('../assets/fonts/AbleLightItalic/amble-lightitalic.eot');
     src: url('../assets/fonts/AbleLightItalic/amble-lightitalic.eot') format('embedded-opentype'), url('../assets/fonts/AbleLightItalic/amble-lightitalic.woff2') format('woff2'), url('../assets/fonts/AbleLightItalic/amble-lightitalic.woff') format('woff'), url('../assets/fonts/AbleLightItalic/amble-lightitalic.ttf') format('truetype'), url('../assets/fonts/AbleLightItalic/amble-lightitalic.svg') format('svg');
-    font-weight: "300";
-    font-style: "italic";
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-*, *::before, *::after, {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -88,7 +88,9 @@ nav ul li a {
     padding: 0.8rem;
     font-family: 'BebasNeueRegular';
 }
-
+ul{
+    padding-left: 0;
+}
 a:hover {
     color: black;
     background-color: white;
@@ -366,23 +368,18 @@ textarea {
 }
 
 textarea:focus, input:focus {
-    border-color: transparent !important;
+    border-color: transparent
 }
 
 /*------------------------------------------------------------------*/
 
 button {
-    outline: none !important;
     border: none;
     background: transparent;
 }
 
 button:hover {
     cursor: pointer;
-}
-
-iframe {
-    border: none !important;
 }
 
 .container-contact {
@@ -576,7 +573,7 @@ textarea.input+.focus-input::after {
     padding: 0.25rem 1.5625rem 0.25rem 0.625rem;
     top: 50%;
     transform: translateY(-50%);
-    right: 0px;
+    right: 0;
     pointer-events: none;
     font-family: 'Times New Roman', Times, serif;
     color: #c80000;
@@ -648,28 +645,12 @@ div>a>img:only-of-type {
     /* Footer END */
 }
 
-/* Line in the bottom of the footer */
-
-hr.style1 {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.01875rem solid #000a0f;
-    margin-top: 3rem;
-}
-
-.copyrights {
-    display: flex;
-    justify-content: center;
-}
-
 /* Apyrankes.index*/
 
 .visos-apyrankes {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    align-items: flex-start;
     text-align: justify;
 }
 
@@ -689,14 +670,6 @@ hr.style1 {
     margin-left: auto;
 }
 
-hr.style2 {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.01875rem solid #000a0f;
-    margin-top: 3rem;
-}
-
 /* Meskiukai.index */
 
 .meskiukai {
@@ -714,7 +687,7 @@ hr.style2 {
     width: 290px;
     margin-bottom: 7px;
     border-radius: 6px;
-    box-shadow: 2px 0px 180px -25px rgba(0, 0, 0, 0.23);
+    box-shadow: 2px 0 180px -25px rgba(0, 0, 0, 0.23);
 }
 
 .meskiuku-info {
@@ -726,41 +699,61 @@ hr.style2 {
 }
 
 .meskiuku-info>h4 {
-    
     line-height: 2rem;
     text-align: justify;
     font-size: 1.3rem;
 }
-.pristatymai{
-  display: flex;
-  margin-top: 4rem; 
-  
+
+.pristatymai {
+    display: flex;
+    margin-top: 4rem;
 }
-.pristatymo-budai{
+
+.pristatymo-budai {
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
     justify-content: space-evenly;
     width: 78%;
 }
-.pristatymo-info{
+
+.pristatymo-info {
     width: 390px;
 }
-.pristatymo-logo{
+
+.pristatymo-logo {
     max-width: 100%;
 }
-.pristatymo-logo>img{
+
+.pristatymo-logo>img {
     width: 188px;
 }
-.pristatymo-info>h3{
+
+.pristatymo-info>h3 {
     font-weight: 900;
 }
-.pristatymai>div{
+
+.pristatymai>div {
     margin: 0 auto;
 }
+
+.copyrights {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.copyrights:before, .copyrights:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+    width: 30.25rem;
+}
+
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 320px) and (max-width: 620px) and (-webkit-min-device-pixel-ratio: 2) {
     /* ------------------------------ General setings START----------------------------- */
     a:hover {
         color: transparent;
@@ -784,8 +777,8 @@ hr.style2 {
         font-size: 1rem;
         padding-right: 0.625rem;
         padding-left: 0.625rem;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .content, .heading {
         margin-top: 1rem;
@@ -904,7 +897,7 @@ hr.style2 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 0%;
+        height: 0;
         opacity: 0;
         visibility: hidden;
         transition: opacity .35s, visibility .35s, height .35s;
@@ -967,7 +960,7 @@ hr.style2 {
         position: absolute;
         bottom: 0;
         left: 50%;
-        width: 0%;
+        width: 0;
         transform: translateX(-50%);
         height: 3px;
         transition: .35s;
@@ -1013,27 +1006,28 @@ hr.style2 {
         align-items: center;
     }
     .meskiuku-photo {
-        max-width: 300px;
+        max-width: 18.75rem;
     }
     .meskiuku-info {
-        width: 276px;
+        width: 17.25rem;
     }
-    .meskiuku-photo>img {}
     .meskiuku-info>h2 {
-        width: 276px;
+        width: 17.25rem;
     }
     .meskiuku-info>h4 {
-        width: 20rem;
         text-align: justify;
     }
-    /* Footer END */
+    .copyrights:before, .copyrights:after {
+        width: 15.625rem;
+    }
 }
+
+/* Footer END */
 
 /*Media -------------------------Queries ----------------------------------- Tablets */
 
-@media only screen and (min-width: 500px) and (max-width: 1280px) {
-/* Generic setings */
-    
+@media only screen and (min-width: 621px) and (max-width: 1280px) {
+    /* Generic setings */
     .welcome-text {
         font-size: 1.4rem;
         margin-left: 3rem;
@@ -1058,7 +1052,7 @@ hr.style2 {
     }
     .wrap-contact {
         width: 31.25rem;
-        padding: 0px 1.875rem 0.8125rem 1.875rem;
+        padding: 0 1.875rem 0.8125rem 1.875rem;
     }
     .contact-form-title {
         line-height: 2.2;
@@ -1066,23 +1060,26 @@ hr.style2 {
     }
     /* Apyrankes.index part */
     .apyrankiu-blokas {
-        width: 300px;
+        width: 18.75rem;
     }
-    
     /* Meskiukai.html */
     .meskiukai {
         display: flex;
-       
         justify-content: center;
         margin-top: 7rem;
     }
-    .meskiuku-photo{
-        width: 320px;
-    }
+    .meskiuku-photo {
+        width: 20rem;
+    } 
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1900px) and (-webkit-min-device-pixel-ratio: 1) {
-    hr.style2 {
-        display: none;
+
+@media screen and (min-width: 1280px) and (max-width: 1900px) and (-webkit-min-device-pixel-ratio: 1) {
+
+     .copyrights:before, .copyrights:after {
+        content: "";
+        border-top: 1px solid black;
+        width: 52.25rem;
     }
+
 }
