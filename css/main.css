@@ -57,7 +57,8 @@
   
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -95,14 +96,11 @@ p {
     height: 50px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
     -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 #return-to-top i {
@@ -113,8 +111,6 @@ p {
     top: 13px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -129,6 +125,8 @@ p {
 /* Banner section start */
 
 .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     background-image: url(../assets/images/original/Banners/top-banner.jpg);
@@ -166,20 +164,26 @@ p {
 
 /* Navigation meniu section START */
 
-nav ul {
+.navigation-desktop  {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 3.75rem;
     margin: 0;
     background-color: #000a0f;
 }
 
-nav ul li {
+.navigation-desktop li {
     list-style: none;
 }
 
-nav ul li a {
+.navigation-desktop  li a {
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
@@ -187,7 +191,7 @@ nav ul li a {
     font-family: 'BebasNeueRegular';
 }
 
-a:hover {
+li a:hover {
     color: black;
     background-color: white;
 }
@@ -209,9 +213,15 @@ a:hover {
 }
 
 .content, .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 5rem;
 }
 
@@ -228,8 +238,12 @@ a:hover {
 }
 
 .welcome-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 3rem;
 }
 
@@ -238,19 +252,33 @@ a:hover {
 /* Product info galery section START */
 
 .produktai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .produkto-blokas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 5rem;
 }
 
 .produkto-blokas:nth-child(2n) {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .produkto-photo {
@@ -273,8 +301,12 @@ a:hover {
 /* ------------------------------ About Us section START----------------------------- */
 
 .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 100%;
     background-image: url(../assets/images/original/Banners/about-us-banner.jpg);
     background-size: cover;
@@ -294,9 +326,15 @@ a:hover {
 /* ------------------------------ Naujienos section START----------------------------- */
 
 .top-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .naujienos-heading {
@@ -308,8 +346,11 @@ a:hover {
 }
 
 .bot-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .meskiuko-photo {
@@ -386,8 +427,12 @@ a:hover {
 /* ------------------------------ Niko Image Gallery section START----------------------------- */
 
 .imglist {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .imglist a:last-of-type {
@@ -441,10 +486,17 @@ button:hover {
 .container-contact {
     width: 100%;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: rgba(219, 21, 99, 0.8);
 }
 
@@ -505,6 +557,8 @@ button:hover {
     left: 0;
     width: 0;
     height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
     background: rgba(219, 21, 99, 1);
 }
@@ -519,6 +573,8 @@ button:hover {
     font-size: 0.8125rem;
     color: #999999;
     line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -563,9 +619,14 @@ textarea.input+.focus-input::after {
 /*------------------------------------------------------------------[ Button ]*/
 
 .container-contact-form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 0.8125rem;
 }
 
@@ -585,16 +646,26 @@ textarea.input+.focus-input::after {
     width: 300%;
     height: 100%;
     background: rgba(219, 21, 99, 1);
+    background: -webkit-linear-gradient(225deg, #d5007d, #e53935, #d5007d, #e53935);
+    background: -o-linear-gradient(225deg, #d5007d, #e53935, #d5007d, #e53935);
     background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
     top: 0;
     left: -100%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
 .contact-form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 1.25rem;
     min-width: 15.25rem;
     height: 3.125rem;
@@ -623,7 +694,9 @@ textarea.input+.focus-input::after {
     border-radius: 0.125rem;
     padding: 0.25rem 1.5625rem 0.25rem 0.625rem;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 0;
     pointer-events: none;
     color: #c80000;
@@ -640,7 +713,9 @@ textarea.input+.focus-input::after {
     color: #c80000;
     font-size: 1rem;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 0.5rem;
 }
 
@@ -658,6 +733,8 @@ textarea.input+.focus-input::after {
 
 .footer {
     margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -666,8 +743,12 @@ textarea.input+.focus-input::after {
 }
 
 .socialmedia-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
 }
 
@@ -684,9 +765,14 @@ textarea.input+.focus-input::after {
 /* Apyrankes.index*/
 
 .visos-apyrankes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .apyrankiu-blokas {
@@ -709,10 +795,15 @@ textarea.input+.focus-input::after {
 /* Meskiukai.index */
 
 .meskiukai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 7rem;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .meskiuku-photo {
@@ -723,30 +814,47 @@ textarea.input+.focus-input::after {
     width: 290px;
     margin-bottom: 0.4375rem;
     border-radius: 0.375rem;
-    box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
+            box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
 }
 
 .meskiuku-info {
     width: 25.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: justify;
     line-height: 2rem;
     font-size: 1.3rem;
 }
 
 .pristatymai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 4rem;
 }
 
 .pristatymo-budai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: justify;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 75%;
 }
 
@@ -770,8 +878,12 @@ p+ul {
 .copyrights {
     margin-top: 1rem;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .copyrights:before, .copyrights:after {
@@ -812,7 +924,8 @@ p+ul {
     }
     .divider-left, .divider-right {
         width: 5rem;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
     .welcome-text {
         margin-right: auto;
@@ -874,10 +987,12 @@ p+ul {
     }
     /* ------------------------------ Naujienos section END----------------------------- */
     .bot-line {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .imglist {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .imglist a img {
         height: 10rem;
@@ -892,17 +1007,23 @@ p+ul {
         width: 35px;
         cursor: pointer;
         z-index: 100;
+        -webkit-transition: opacity .25s ease;
+        -o-transition: opacity .25s ease;
         transition: opacity .25s ease;
     }
     .button_container.active .top {
-        transform: translateY(11px) translateX(0) rotate(45deg);
+        -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+            -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+                transform: translateY(11px) translateX(0) rotate(45deg);
         background: #fff;
     }
     .button_container.active .middle {
         opacity: 0;
     }
     .button_container.active .bottom {
-        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+            -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+                transform: translateY(-11px) translateX(0) rotate(-45deg);
         background: #fff;
     }
     .button_container span {
@@ -913,6 +1034,8 @@ p+ul {
         position: absolute;
         top: 0;
         left: 0;
+        -webkit-transition: all .35s ease;
+        -o-transition: all .35s ease;
         transition: all .35s ease;
         cursor: pointer;
     }
@@ -933,6 +1056,8 @@ p+ul {
         height: 0;
         opacity: 0;
         visibility: hidden;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+        -o-transition: opacity .35s, visibility .35s, height .35s;
         transition: opacity .35s, visibility .35s, height .35s;
         overflow: hidden;
         z-index: 9;
@@ -943,23 +1068,30 @@ p+ul {
         height: 100%;
     }
     .overlay.open li {
-        animation: fadeInRight .5s ease forwards;
-        animation-delay: .35s;
+        -webkit-animation: fadeInRight .5s ease forwards;
+                animation: fadeInRight .5s ease forwards;
+        -webkit-animation-delay: .35s;
+                animation-delay: .35s;
     }
     .overlay.open li:nth-of-type(2) {
-        animation-delay: .4s;
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s;
     }
     .overlay.open li:nth-of-type(3) {
-        animation-delay: .45s;
+        -webkit-animation-delay: .45s;
+                animation-delay: .45s;
     }
     .overlay.open li:nth-of-type(4) {
-        animation-delay: .50s;
+        -webkit-animation-delay: .50s;
+                animation-delay: .50s;
     }
     .overlay nav {
         position: relative;
         ;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
         text-align: center;
     }
     .overlay ul {
@@ -994,8 +1126,12 @@ p+ul {
         bottom: 0;
         left: 50%;
         width: 0;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         height: 3px;
+        -webkit-transition: .35s;
+        -o-transition: .35s;
         transition: .35s;
     }
     @-webkit-keyframes fadeInRight {
@@ -1023,10 +1159,13 @@ p+ul {
     /* Footer START */
     .footer {
         margin-top: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .socialmedia-info {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .socialmedia-info div {
         width: 180px;
@@ -1034,12 +1173,18 @@ p+ul {
     div>a>img:only-of-type {
         width: 10.625rem;
         max-height: 4.6875rem;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
     /* Meskiukai.html */
     .meskiukai {
-        flex-direction: column-reverse;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .meskiuku-photo {
         max-width: 18.75rem;
@@ -1106,8 +1251,12 @@ p+ul {
     }
     /* Meskiukai.html */
     .meskiukai {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-top: 7rem;
     }
     .meskiuku-photo {
