@@ -1,12 +1,11 @@
 
-//Contact form vlidate
+//----------------------Contact form validate--------//
 
 (function ($) {
     "use strict";
 
 
-    /*==================================================================
-    [ Focus Contact2 ]*/
+    //---------------Focus Contact2---------------- //
     $('.input').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -20,8 +19,7 @@
             
   
     
-    /*==================================================================
-    [ Validate ]*/
+    //---------Validate----------------//
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
     var message = $('.validate-input textarea[name="message"]');
@@ -71,10 +69,24 @@
     
 })(jQuery);
 
-   //Java script
-//Burger menu overlay
+
+//-----Burger menu overlay------//
 $('#toggle').click(function() {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
    });
 
+
+//-------Scroll to Top------//
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
