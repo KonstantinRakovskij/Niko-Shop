@@ -13,52 +13,51 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('../assets/fonts/iconmoon/icomoon.eot');
-    src:  url('../assets/fonts/iconmoon/icomoon.eot') format('embedded-opentype'),
-      url('../assets/fonts/iconmoon/icomoon.ttf') format('truetype'),
-      url('../assets/fonts/iconmoon/icomoon.woff') format('woff'),
-      url('../assets/fonts/iconmoon/icomoon.svg') format('svg');
+    src: url('../assets/fonts/iconmoon/icomoon.eot');
+    src: url('../assets/fonts/iconmoon/icomoon.eot') format('embedded-opentype'), url('../assets/fonts/iconmoon/icomoon.ttf') format('truetype'), url('../assets/fonts/iconmoon/icomoon.woff') format('woff'), url('../assets/fonts/iconmoon/icomoon.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' ;
-    speak: none;
+    font-family: 'icomoon';
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-chevron-up:before {
+}
+
+.icon-chevron-up:before {
     content: "\e900";
-  }
-  .icon-facebook-square:before {
+}
+
+.icon-facebook-square:before {
     content: "\e902";
-  }
-  .icon-envelope:before {
+}
+
+.icon-envelope:before {
     content: "\1f308";
-  }
-  .icon-instagram:before {
+}
+
+.icon-instagram:before {
     content: "\e901";
-  }
-  .icon-location:before {
+}
+
+.icon-location:before {
     content: "\e947";
-  }
-  
+}
 
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -86,6 +85,7 @@ p {
     font-weight: 300;
     font-size: 1rem;
 }
+
 #return-to-top {
     position: fixed;
     bottom: 50px;
@@ -103,6 +103,7 @@ p {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -114,9 +115,11 @@ p {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
@@ -164,26 +167,24 @@ p {
 
 /* Navigation meniu section START */
 
-.navigation-desktop  {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.navigation-desktop {
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 3.75rem;
     margin: 0;
     background-color: #000a0f;
 }
 
-.navigation-desktop li {
+ul li {
     list-style: none;
 }
 
-.navigation-desktop  li a {
+li a {
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
@@ -191,14 +192,14 @@ p {
     font-family: 'BebasNeueRegular';
 }
 
-li a:hover {
+a:hover {
     color: black;
     background-color: white;
 }
 
 /* Order Property setings using ID */
 
-#logo>img {
+.logo>img {
     height: 12rem;
 }
 
@@ -217,11 +218,11 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 5rem;
 }
 
@@ -242,8 +243,8 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 3rem;
 }
 
@@ -257,8 +258,8 @@ li a:hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .produkto-blokas {
@@ -266,19 +267,19 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 5rem;
 }
 
 .produkto-blokas:nth-child(2n) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .produkto-photo {
@@ -305,8 +306,8 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     width: 100%;
     background-image: url(../assets/images/original/Banners/about-us-banner.jpg);
     background-size: cover;
@@ -330,11 +331,11 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .naujienos-heading {
@@ -350,7 +351,7 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
 .meskiuko-photo {
@@ -431,8 +432,8 @@ li a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
 }
 
 .imglist a:last-of-type {
@@ -490,18 +491,18 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: rgba(219, 21, 99, 0.8);
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(235, 2, 58, 0.68);
 }
 
 .wrap-contact {
-    width: 49.375rem;
+    width: 41.375rem;
     background: #fff;
     border-radius: 0.625rem;
     overflow: hidden;
@@ -623,10 +624,10 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-top: 0.8125rem;
 }
 
@@ -661,11 +662,11 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0 1.25rem;
     min-width: 15.25rem;
     height: 3.125rem;
@@ -695,8 +696,8 @@ textarea.input+.focus-input::after {
     padding: 0.25rem 1.5625rem 0.25rem 0.625rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 0;
     pointer-events: none;
     color: #c80000;
@@ -714,8 +715,8 @@ textarea.input+.focus-input::after {
     font-size: 1rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 0.5rem;
 }
 
@@ -747,8 +748,8 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -769,10 +770,10 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .apyrankiu-blokas {
@@ -799,11 +800,11 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 7rem;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .meskiuku-photo {
@@ -815,7 +816,7 @@ textarea.input+.focus-input::after {
     margin-bottom: 0.4375rem;
     border-radius: 0.375rem;
     -webkit-box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
-            box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
+    box-shadow: 0.125rem 0 11.25rem -1.5625rem rgba(0, 0, 0, 0.23);
 }
 
 .meskiuku-info {
@@ -824,37 +825,33 @@ textarea.input+.focus-input::after {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: justify;
     line-height: 2rem;
     font-size: 1.3rem;
 }
 
 .pristatymai {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 4rem;
 }
 
 .pristatymo-budai {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     text-align: justify;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     width: 75%;
 }
 
@@ -882,8 +879,8 @@ p+ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .copyrights:before, .copyrights:after {
@@ -893,9 +890,63 @@ p+ul {
     width: 30.25rem;
 }
 
+.intro-bg {
+    background-color: #000a0f;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 400px;
+    margin-top: 6rem;
+}
+
+.intro-button a {
+    color: black;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    margin: 2rem;
+    background-color: white;
+    width: 250px;
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.intro-button a:hover {
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .intro-container {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .intro-buttin a {
+        width: 200px;
+    }
+    .image img {
+        width: 300px;
+    }
+    .intro-container {
+        margin-top: 20%;
+    }
+}
+
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
-@media (min-width: 320px) and (max-width: 480px)  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     /* ------------------------------ General setings START----------------------------- */
     h2 {
         font-size: 2rem;
@@ -925,7 +976,7 @@ p+ul {
     .divider-left, .divider-right {
         width: 5rem;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
     }
     .welcome-text {
         margin-right: auto;
@@ -988,11 +1039,11 @@ p+ul {
     /* ------------------------------ Naujienos section END----------------------------- */
     .bot-line {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .imglist {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .imglist a img {
         height: 10rem;
@@ -1013,8 +1064,8 @@ p+ul {
     }
     .button_container.active .top {
         -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
-            -ms-transform: translateY(11px) translateX(0) rotate(45deg);
-                transform: translateY(11px) translateX(0) rotate(45deg);
+        -ms-transform: translateY(11px) translateX(0) rotate(45deg);
+        transform: translateY(11px) translateX(0) rotate(45deg);
         background: #fff;
     }
     .button_container.active .middle {
@@ -1022,8 +1073,8 @@ p+ul {
     }
     .button_container.active .bottom {
         -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-            -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
-                transform: translateY(-11px) translateX(0) rotate(-45deg);
+        -ms-transform: translateY(-11px) translateX(0) rotate(-45deg);
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
         background: #fff;
     }
     .button_container span {
@@ -1069,29 +1120,29 @@ p+ul {
     }
     .overlay.open li {
         -webkit-animation: fadeInRight .5s ease forwards;
-                animation: fadeInRight .5s ease forwards;
+        animation: fadeInRight .5s ease forwards;
         -webkit-animation-delay: .35s;
-                animation-delay: .35s;
+        animation-delay: .35s;
     }
     .overlay.open li:nth-of-type(2) {
         -webkit-animation-delay: .4s;
-                animation-delay: .4s;
+        animation-delay: .4s;
     }
     .overlay.open li:nth-of-type(3) {
         -webkit-animation-delay: .45s;
-                animation-delay: .45s;
+        animation-delay: .45s;
     }
     .overlay.open li:nth-of-type(4) {
         -webkit-animation-delay: .50s;
-                animation-delay: .50s;
+        animation-delay: .50s;
     }
     .overlay nav {
         position: relative;
         ;
         top: 50%;
         -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         text-align: center;
     }
     .overlay ul {
@@ -1127,8 +1178,8 @@ p+ul {
         left: 50%;
         width: 0;
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
         height: 3px;
         -webkit-transition: .35s;
         -o-transition: .35s;
@@ -1165,7 +1216,7 @@ p+ul {
     }
     .socialmedia-info {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .socialmedia-info div {
         width: 180px;
@@ -1174,17 +1225,17 @@ p+ul {
         width: 10.625rem;
         max-height: 4.6875rem;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
     }
     /* Meskiukai.html */
     .meskiukai {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .meskiuku-photo {
         max-width: 18.75rem;
@@ -1255,8 +1306,8 @@ p+ul {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         margin-top: 7rem;
     }
     .meskiuku-photo {
