@@ -1,5 +1,3 @@
-
-
 @font-face {
 	font-family: 'BebasNeue-Regular';
 	src: url('../assets/fonts/BebasNeue/BebasNeue-Regular.eot');
@@ -1447,7 +1445,7 @@ p+ul {
 	/*-- Footer -- */
 }
 /*--IE9, IE10 --*/
-@media screen and (min-width:0\0) {
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     .copyrights:before {
 		left: 700px;	
 	}
