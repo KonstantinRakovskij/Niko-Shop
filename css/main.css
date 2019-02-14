@@ -85,6 +85,7 @@ h2 {
 
 h3 {
 	font-family: 'Alegreya', serif;
+	font-size: 1.5rem;
 }
 
 p {
@@ -131,7 +132,7 @@ p {
 }
 
 
-/* Banner section start */
+/* ------------------------------ Banner section start ----------------------------- */
 
 .banner {
 	display: -webkit-box;
@@ -170,12 +171,10 @@ p {
 	font-size: 1.5rem;
 	padding-top: 0.1875rem;
 }
+/* ------------------------------ Banner section END ----------------------------- */
 
 
-/* Banner section END */
-
-
-/* Navigation meniu section START */
+/* ------------------------------ Navigation meniu section START ----------------------------- */
 
 .navigation-desktop {
 	display: -webkit-box;
@@ -211,21 +210,18 @@ a:hover {
 	background-color: white;
 }
 
-
-/* Order Property setings using ID */
-
 .logo>img {
 	height: 12rem;
 }
 
 
-/* Navigation menu section END */
+/* ------------------------------ Navigation menu section END ----------------------------- */
 
 
-/* Welcome section START */
+/* ------------------------------ Welcome section START ----------------------------- */
 
 
-/* Heading part editing START */
+/* ------------------------------ Heading part editing START ----------------------------- */
 
 .welcome {
 	margin-top: 0;
@@ -254,7 +250,7 @@ a:hover {
 }
 
 
-/* Heding part editing END */
+/* ------------------------------ Heding part editing END ----------------------------- */
 
 .welcome-heading {
 	margin-left: 10px;
@@ -275,10 +271,10 @@ a:hover {
 }
 
 
-/* Welcome section END */
+/* ------------------------------ Welcome section END ----------------------------- */
 
 
-/* Product info galery section START */
+/* ------------------------------ Product info galery section START ----------------------------- */
 
 .produktai {
 	display: -webkit-box;
@@ -331,7 +327,7 @@ a:hover {
 }
 
 
-/* Product info section END */
+/* ------------------------------ Product info section END ----------------------------- */
 
 
 /* ------------------------------ About Us section START----------------------------- */
@@ -382,8 +378,6 @@ a:hover {
 }
 
 .naujienos-heading {
-	font-family: Times, serif;
-	font-size: 1.7rem;
 	margin-right: 10px;
 	margin-left: 10px;
 	font-weight: bold;
@@ -470,10 +464,10 @@ a:hover {
 }
 
 
-/* ------------------------------ Migtuko stilistika END----------------------------- */
+/* ------------------------------ Migtuko stilistika END ----------------------------- */
 
 
-/* ------------------------------ Niko Image Gallery section START----------------------------- */
+/* ------------------------------ Niko Image Gallery section START ----------------------------- */
 
 .imglist {
 	display: -webkit-box;
@@ -494,7 +488,7 @@ a:hover {
 }
 
 
-/* ------------------------------ Niko image galery section END----------------------------- */
+/* ------------------------------ Niko image galery section END ----------------------------- */
 
 
 /*Niko contact forma START*/
@@ -680,7 +674,7 @@ textarea.input+.focus-input::after {
 }
 
 
-/*------------------------------------------------------------------[ Button ]*/
+/* ------------------------------ Button ----------------------------- */
 
 .container-contact-form-btn {
 	display: -webkit-box;
@@ -749,8 +743,7 @@ textarea.input+.focus-input::after {
 	left: 0;
 }
 
-
-/*------------------------------------------------------------------[ Alert validate ]*/
+/* ------------------------------ Alert validate ----------------------------- */
 
 .validate-input {
 	position: relative;
@@ -802,7 +795,7 @@ textarea.input+.focus-input::after {
 }
 
 
-/* Footer START */
+/* ------------------------------ Footer START ----------------------------- */
 
 .footer {
 	display: -webkit-box;
@@ -856,9 +849,9 @@ textarea.input+.focus-input::after {
 	width: 30.25rem;	
 }
 
-/* Footer END */
+/* ------------------------------ Footer END  ----------------------------- */
 
-/* Apyrankes.index*/
+/* ------------------------------ Apyrankes.index START ----------------------------- */
 
 .visos-apyrankes {
 	display: -webkit-box;
@@ -891,9 +884,9 @@ textarea.input+.focus-input::after {
 	margin-left: auto;
 	text-align: justify;
 }
+/* ------------------------------Apyrankes.index END  ----------------------------- */
 
-
-/* Meskiukai.index */
+/* ------------------------------ Meskiukai.index  ----------------------------- */
 
 .meskiukai {
 	display: -webkit-box;
@@ -942,7 +935,7 @@ textarea.input+.focus-input::after {
 	line-height: 2rem;
 	font-size: 1.3rem;
 }
-
+/* ------------------------------Prystatimai.index START  ----------------------------- */
 .pristatymai {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -986,7 +979,9 @@ p+ul {
 .pristatymo-logo>img {
 	width: 188px;
 }
+/* ------------------------------ Pristatimai.index END  ----------------------------- */
 
+/* ------------------------------ Intro.index START  ----------------------------- */ 
 .intro-bg {
 	background-color: #000a0f;
 }
@@ -1044,7 +1039,7 @@ p+ul {
 	color: white;
 	background-color: black;
 }
-
+/* ------------------------------ Intro.index END  ----------------------------- */ 
 
 /*Media -------------------------Queries ----------------------------------- Mobile */
 
@@ -1060,7 +1055,7 @@ p+ul {
 		font-size: 1.1rem;
 	}
 	/* ------------------------------ General setings END----------------------------- */
-	/*Contact form padding setings */
+	/* ------------------------------ Contact form padding setings  ----------------------------- */
 	.wrap-contact {
 		padding: 0.625rem 0.625rem 0.4375rem 0.625rem;
 	}
@@ -1127,19 +1122,20 @@ p+ul {
 	}
 	/* ------------------------------ Product section END-------------------------------- */
 	/* ------------------------------ About Us section START----------------------------- */
+	.about-us-info {
+		margin-right: 0.9rem;
+		width: 15.5rem;
+		text-align: justify;
+	}
 	.about-us-info>h3 {
 		padding-left: 19%;
 		padding-right: 6%;
 		letter-spacing: 0.001em;
 		line-height: 2rem;
 	}
-	.about-us-info {
-		margin-right: 0.5rem;
-		margin-top: 0;
-		width: 21.3125rem;
-	}
-	/* ------------------------------ About Us section END----------------------------- */
-	/* ------------------------------ Naujienos section START----------------------------- */
+
+	/* ------------------------------ About Us section END ----------------------------- */
+	/* ------------------------------ Naujienos section START ----------------------------- */
 	.meskutis-photo>img {
 		margin-top: 1rem;
 	}
@@ -1148,7 +1144,7 @@ p+ul {
 		margin: 0 auto;
 		width: 20rem;
 	}
-	/* ------------------------------ Naujienos section END----------------------------- */
+	/* ------------------------------ Naujienos section END ----------------------------- */
 	.bot-line {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -1162,8 +1158,8 @@ p+ul {
 	.imglist a img {
 		height: 8.7rem;
 	}
-	/*Burger Menu seting START*/
-	/* Button section start */
+	/* ------------------------------Burger Menu seting START ----------------------------- */
+/* ------------------------------ Button section start ----------------------------- */
 	.button_container {
 		position: fixed;
 		top: 5%;
@@ -1210,8 +1206,8 @@ p+ul {
 	.button_container span:nth-of-type(3) {
 		top: 22px;
 	}
-	/* Button sectiob end */
-	/* Overlay section start */
+	/* ------------------------------ Button sectiob end ----------------------------- */
+	/* ------------------------------ Overlay section start ----------------------------- */
 	.overlay {
 		position: fixed;
 		background: #FF5252;
@@ -1263,6 +1259,7 @@ p+ul {
 		position: relative;
 		background-color: transparent;
 		top: 250px;
+		flex-direction: column;
 	}
 	.overlay ul li {
 		display: block;
@@ -1317,9 +1314,9 @@ p+ul {
 			left: 0;
 		}
 	}
-	/* Overlay section end */
-	/* Burger menu END */
-	/* Footer START */
+/* ------------------------------ Overlay section end ----------------------------- */
+/* ------------------------------ Burger menu END ----------------------------- */
+	/* ------------------------------ Footer START ----------------------------- */
 	.footer {
 		margin-top: 5rem;
 		display: -webkit-box;
@@ -1345,8 +1342,8 @@ p+ul {
 	.copyrights:after {
 		width: 15.625rem;
 	}
-	/* Footer END */
-	/* Meskiukai-page.html  START*/
+/* ------------------------------ Footer END ----------------------------- */
+/* ------------------------------ Meskiukai-page.html  START ----------------------------- */
 	.meskiukai {
 		align-items: center;
 		-webkit-align-items: center;
@@ -1364,8 +1361,8 @@ p+ul {
 	.meskiuku-info {
 		width: 13rem;
 	}
-	/*meskiukai-page.html END*/
-	/*Pristatymai-page.html START*/
+/* ------------------------------ Meskiukai-page.html END ----------------------------- */
+/* ------------------------------ Pristatymai-page.html START ----------------------------- */
 	.pristatymo-info {
 		width: 295px;
 		letter-spacing: 1px;
@@ -1373,8 +1370,8 @@ p+ul {
 	.pristatymo-logo>img {
 		width: 90px;
 	}
-	/* Pristatymai-page.html END */
-	/* Intro-page.html */
+/* ------------------------------ Pristatymai-page.html END ----------------------------- */
+/* ------------------------------ Intro-page.html ----------------------------- */
 	.intro-container {
 		margin-top: 15%;
 		margin-bottom: 15%;
@@ -1422,11 +1419,11 @@ p+ul {
 		line-height: 2.2;
 		padding-bottom: 1.875rem;
 	}
-	/* Apyrankes.index  */
+	/* ------------------------------ Apyrankes.index  ----------------------------- */
 	.apyrankiu-blokas {
 		width: 18.75rem;
 	}
-	/* Meskiukai.html */
+	/* ------------------------------ Meskiukai.html ----------------------------- */
 	.meskiukai {
 		-moz-box-pack: center;
 		-ms-flex-pack: center;
@@ -1442,9 +1439,9 @@ p+ul {
 	.meskiuku-photo {
 		width: 22rem;
 	}
-	/*-- Footer -- */
+	/* ------------------------------ Footer ----------------------------- */
 }
-/*--IE9, IE10 --*/
+/* ------------------------------ IE9, IE10 ----------------------------- */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     .copyrights:before {
 		left: 700px;	
@@ -1456,8 +1453,16 @@ p+ul {
 		min-height: 80vh;
 		padding-top: 90px;
 	}
-	/* Removede Huge white spaces between rows */
+	/* ------------------------------ Removede Huge white spaces between rows ----------------------------- */
 	.produkto-photo{
 		width:400px;
+	}
+/* ------------------------------ meskiukai.index Product alignment adjustment ----------------------------- */
+	.apyrankiu-blokas{
+	width: 25rem;
+	}
+	/* ------------------------------pristatimai.index column width adjustment fix  ----------------------------- */
+	.pristatymo-budai{
+width: 60%;
 	}
 }
