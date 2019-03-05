@@ -92,7 +92,7 @@ h4{
 p {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1rem;
-	padding: 0 20px 0 20px;
+	padding: 0 10px 0 10px;
 }
 
 .flex{
@@ -160,7 +160,7 @@ p {
 	left: 3.125rem;
 	font-size: 2rem;
 	background-color: rgba(129, 129, 138, 0.2);
-	width: 11.25rem;
+	width: 180px;
 	height: 5.3125rem;
 	text-align: left;
 	padding-top: 0.625rem;
@@ -329,7 +329,7 @@ a:hover {
 }
 
 .about-us-info {
-	width: 35rem;
+	width: 560px;
 	margin-right: 6.87rem;
 	margin-top: 1.2rem;
 }
@@ -384,7 +384,7 @@ a:hover {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	width: 22rem;
+	width: 352px;
 	text-align: justify;
 }
 
@@ -764,7 +764,7 @@ textarea.input+.focus-input::after {
 	content: "";
 	position: absolute;
 	border-top: 1px solid black;
-	width: 30.25rem;
+	width: 484px;
 }
 
 /* ------------------------------ Footer END  ----------------------------- */
@@ -793,7 +793,7 @@ textarea.input+.focus-input::after {
 }
 
 .apyrankes-info {
-	width: 15.625rem;
+	width: 250px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: justify;
@@ -915,7 +915,6 @@ p+ul {
 
 .image img {
 	width: 400px;
-	margin-top: 6rem;
 }
 
 .intro-button a {
@@ -945,13 +944,8 @@ p+ul {
 /*------------------------------ Daugiaunaujienu.html START  ----------------------------- */
 
 .events {
-	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
-
-.event {
-	display: flex;
 }
 
 .event-img {
@@ -1013,20 +1007,20 @@ p+ul {
 	.welcome-text {
 		margin-right: auto;
 		margin-left: auto;
-		width: 19.5rem;
+		width: 312px;
 		text-align: center;
 	}
 	.banner-text>p:nth-child(odd) {
 		left: 0.6875rem;
 		top: -0.5625rem;
 		font-size: 1.2rem;
-		width: 7.5rem;
+		width: 120px;
 		height: 2.9375rem;
 		padding-top: 0.4375rem;
 		padding-left: 0.9375rem;
 	}
 	.banner-text>p:nth-child(even) {
-		left: 3rem;
+		left: 2.5rem;
 		top: 1.125rem;
 		font-size: 1rem;
 		padding-top: 0.1875rem;
@@ -1040,12 +1034,12 @@ p+ul {
 	.produkto-info>h3 {
 		margin-right: auto;
 		margin-left: auto;
-		width: 18.75rem;
+		width: 300px;
 		font-size: 1rem;
 	}
 	.produkto-info>p {
 		margin: 0 auto;
-		width: 20rem;
+		width: 320px;
 	}
 	.produkto-blokas {
 		display: block;
@@ -1054,7 +1048,7 @@ p+ul {
 	/* ------------------------------ About Us section START----------------------------- */
 	.about-us-info {
 		margin-right: 0.9rem;
-		width: 15.5rem;
+		width: 248px;
 		text-align: justify;
 	}
 	.about-us-info>h3 {
@@ -1071,7 +1065,7 @@ p+ul {
 	.meskutis-info {
 		text-align: justify;
 		margin: 0 auto;
-		width: 20rem;
+		width: 320px;
 	}
 	/* ------------------------------ Naujienos section END ----------------------------- */
 	.bot-line {
@@ -1252,9 +1246,16 @@ p+ul {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-	}
+		-webkit-justify-content: center;
+		justify-content: center;
+		}
+	
 	.socialmedia-info div {
-		width: 180px;
+		width: 150px;
+	}
+
+	.socialmedia-info>div> p {
+		width: 149px;
 	}
 	div>a>img:only-of-type {
 		width: 10.625rem;
@@ -1282,7 +1283,7 @@ p+ul {
 		max-width: 18.75rem;
 	}
 	.meskiuku-info {
-		width: 13rem;
+		width: 208px;
 	}
 	/* ------------------------------ Meskiukai-page.html END ----------------------------- */
 	/* ------------------------------ Pristatymai-page.html START ----------------------------- */
@@ -1309,13 +1310,11 @@ p+ul {
 		margin-top: 20%;
 	}
 	/* ------------------------------ ivikiai.html ----------------------------- */
-.event{
+	.event{
 	flex-direction: column;
 	margin-top: 6rem;
+	}
 }
-
-}
-
 /*Media -------------------------Queries ----------------------------------- Tablets */
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1280px) {
@@ -1333,7 +1332,7 @@ p+ul {
 		min-height: 33vh;
 	}
 	.about-us-info {
-		width: 22rem;
+		width: 352px;
 		margin-top: 0;
 	}
 	.container-contact {
